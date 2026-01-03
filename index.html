@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>n5ajk anime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- الخلفية صورة -->
+  <div class="bg"></div>
+
+  <!-- الفيديو -->
+  <video id="video" loop>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <!-- الصوت -->
+  <audio id="audio" loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- المحتوى -->
+  <div class="ui">
+    <h1>n5ajk anime</h1>
+
+    <div class="links">
+      <a href="https://t.me/animewallpapers106" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/n5ajk" target="_blank">Instagram</a>
+    </div>
+
+    <button id="play">▶ Play</button>
+  </div>
+
+  <script>
+    const play = document.getElementById("play");
+    const video = document.getElementById("video");
+    const audio = document.getElementById("audio");
+
+    play.onclick = () => {
+      video.style.display = "block";
+      video.play();
+      audio.play();
+      play.style.display = "none";
+    };
+  </script>
+
+</body>
+</html>
